@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en-GB">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Front-End-Test</title>
+
+  <style>
+    body {
+      background: #be5a5a;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div id="demo"></div>
+
+  <script type="module">
+    import { html, render } from 'lit-html';
+    import '../lit-component.js';
+    import {ifDefined} from 'lit-html/directives/if-defined';
+  
+  render(
+
+      html`
+        <lit-component >
+      
+        </lit-component>
+      `,
+
+      document.querySelector('#demo')
+    );
+  </script>
+</body>
+
+</html>
